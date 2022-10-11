@@ -1,6 +1,6 @@
-<div class="panel panel-default">
+<div style="clear:both" class="panel panel-default">
     <div class="panel-body">
-        Sonja
+        Panel content
     </div>
-    <div class="panel-footer">Damjanovic</div>
+    <div class="panel-footer">Panel footer</div>
 </div>
