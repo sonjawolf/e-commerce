@@ -4,6 +4,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,10 @@ Route::post('/login',[UserController::class,'login1']);
 Route::get('/p',[ProductController::class,'index']);
 
 Route::get('/detail/{id}',[ProductController::class,'detail']);
+
+Route::post('/add_to_cart',[ProductController::class,'add_to_cart']);
+
+Route::get('/logout',function(){
+   Session::forget('user');
+   return redirect('/');
+});
